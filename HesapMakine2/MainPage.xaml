@@ -1,0 +1,45 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HesapMakine2.MainPage"
+             Title="Standart Mod">
+
+    <VerticalStackLayout Padding="20" Spacing="10">
+        <Label Text="Standart Hesap Makinesi" FontSize="20" HorizontalOptions="Center" />
+        <Entry x:Name="Display" FontSize="24" HorizontalOptions="Center" IsReadOnly="True" />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Text="7" Grid.Row="0" Grid.Column="0" Clicked="OnNumberClicked" />
+            <Button Text="8" Grid.Row="0" Grid.Column="1" Clicked="OnNumberClicked" />
+            <Button Text="9" Grid.Row="0" Grid.Column="2" Clicked="OnNumberClicked" />
+            <Button Text="/" Grid.Row="0" Grid.Column="3" Clicked="OnOperatorClicked" />
+
+            <Button Text="4" Grid.Row="1" Grid.Column="0" Clicked="OnNumberClicked" />
+            <Button Text="5" Grid.Row="1" Grid.Column="1" Clicked="OnNumberClicked" />
+            <Button Text="6" Grid.Row="1" Grid.Column="2" Clicked="OnNumberClicked" />
+            <Button Text="*" Grid.Row="1" Grid.Column="3" Clicked="OnOperatorClicked" />
+
+            <Button Text="1" Grid.Row="2" Grid.Column="0" Clicked="OnNumberClicked" />
+            <Button Text="2" Grid.Row="2" Grid.Column="1" Clicked="OnNumberClicked" />
+            <Button Text="3" Grid.Row="2" Grid.Column="2" Clicked="OnNumberClicked" />
+            <Button Text="-" Grid.Row="2" Grid.Column="3" Clicked="OnOperatorClicked" />
+
+            <Button Text="0" Grid.Row="3" Grid.Column="0" Clicked="OnNumberClicked" />
+            <Button Text="C" Grid.Row="3" Grid.Column="1" Clicked="OnClearClicked" />
+            <Button Text="=" Grid.Row="3" Grid.Column="2" Clicked="OnCalculateClicked" />
+            <Button Text="+" Grid.Row="3" Grid.Column="3" Clicked="OnOperatorClicked" />
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
